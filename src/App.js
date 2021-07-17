@@ -29,7 +29,7 @@ function App() {
         <option value="Economics">Economics</option>
         <option value="History">History</option>
         <option value="War">War</option>
-        <option value="Legal">Legal</option>
+        <option value="Law">Law</option>
         <option value="Anarchy">Anarchy</option>
         <option value="Philosophy">Philosophy</option>
         <option value="Manifesto/Theory">Manifesto/Theory</option>
@@ -37,7 +37,7 @@ function App() {
 
       <BookListDiv>
         {filteredList.map(book => {
-          return <Card title={book.title} author={book.author} genre={book.genre} amazon={book.amazon} />
+          return <Card id={book.title} title={book.title} author={book.author} genre={book.genre} amazon={book.amazon} setGenre={setGenre} />
         })}
       </BookListDiv>
     </div>
@@ -49,10 +49,12 @@ const Title = styled.h1`
   width: 50%;
 `;
 
-const GenreSelect = styled.select``;
+const GenreSelect = styled.select`
+  margin: 1rem 0;
+`;
 
 const BookListDiv = styled.div`
-  margin-top: 3rem;
+
 `;
 
 export default App;
