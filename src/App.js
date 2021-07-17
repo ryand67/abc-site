@@ -34,6 +34,7 @@ function App() {
         <option value="Anarchy">Anarchy</option>
         <option value="Philosophy">Philosophy</option>
         <option value="Manifesto/Theory">Manifesto/Theory</option>
+        <option value="Policy Analysis">Policy Analysis</option>
       </GenreSelect>
 
       <BookListDiv>
