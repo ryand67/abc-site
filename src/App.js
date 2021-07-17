@@ -51,6 +51,7 @@ const Title = styled.h1`
 
 const GenreSelect = styled.select`
   margin: 1rem 0;
+  padding: .5rem .25rem;
 `;
 
 const BookListDiv = styled.div`
