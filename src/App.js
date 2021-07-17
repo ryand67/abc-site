@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <Title>Books on History, Anarchy, and Economics in the Order of My Bookshelf (Random)</Title>
-      <h3>Brought to You By The Lunch Boys Podcast</h3>
+      <h4>Brought to You By The Lunch Boys Podcast</h4>
       <GenreSelect onChange={e => setGenre(e.target.value)} name="" id="">
         <option value="All">All</option>
         <option value="Economics">Economics</option>
