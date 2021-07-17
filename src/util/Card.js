@@ -34,6 +34,10 @@ const CardDiv = styled.div`
     h4 {
         margin: 0;
     }
+
+    @media (max-width: 950px) {
+        width: 90%;
+    }
 `;
 
 const GenreDiv = styled.div`

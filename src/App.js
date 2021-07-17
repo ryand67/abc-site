@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <Title>Books on History, Anarchy, and Economics in the Order of My Bookshelf (Random)</Title>
+      <h3>Brought to You By The Lunch Boys Podcast</h3>
       <GenreSelect onChange={e => setGenre(e.target.value)} name="" id="">
         <option value="All">All</option>
         <option value="Economics">Economics</option>
@@ -47,6 +48,10 @@ function App() {
 const Title = styled.h1`
   margin: 0 auto;
   width: 50%;
+
+  @media(max-width: 950px) {
+    width: 90%;
+  }
 `;
 
 const GenreSelect = styled.select`

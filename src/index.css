@@ -15,3 +15,9 @@ code {
 html {
   background: rgb(240, 240, 240);
 }
+
+@media (max-width: 950px) {
+  html {
+    font-size: 12px;
+  }
+}
