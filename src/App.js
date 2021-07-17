@@ -17,11 +17,13 @@ function App() {
         return item;
       }
     })
+    setFilteredList(holder);
     console.log(holder);
   }, [genre])
 
   return (
     <div className="App">
+      <Title>Books on History, Anarchy, and Economics in the Order of My Bookshelf (Random)</Title>
       <GenreSelect onChange={e => setGenre(e.target.value)} name="" id="">
         <option value="All">All</option>
         <option value="Economics">Economics</option>
@@ -32,10 +34,25 @@ function App() {
         <option value="Philosophy">Philosophy</option>
         <option value="Manifesto/Theory">Manifesto/Theory</option>
       </GenreSelect>
+
+      <BookListDiv>
+        {filteredList.map(book => {
+          return <Card title={book.title} author={book.author} genre={book.genre} amazon={book.amazon} />
+        })}
+      </BookListDiv>
     </div>
   );
 }
 
+const Title = styled.h1`
+  margin: 0 auto;
+  width: 50%;
+`;
+
 const GenreSelect = styled.select``;
+
+const BookListDiv = styled.div`
+  margin-top: 3rem;
+`;
 
 export default App;
